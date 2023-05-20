@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<title>Unit Converter</title>
+
+	<style type="text/css">
+
+		.custom{
+    		background-color: white;
+    		margin-top: 100px;
+    		width: 700px;
+    		border: solid 1px;
+    		border-radius: 20px;
+    		padding: 50px;
+    	}
+
+    	h1, h3, div{
+    		font-family: Comfortaa;
+    	}
+ 	
+    	
+    	body{
+    		background-image: url(https://i.pinimg.com/originals/59/7d/91/597d910bf603b13c67149b8abaac55b2.gif);
+    		background-size: cover;
+    		/*bg reference; https://www.pinterest.ph/pin/313563192820350930/*/
+    		/*dog gif image reference; https://giphy.com/stickers/SanrioKorea-cute-sanrio-korea-YqnvzfZ6TrVWYYBlQr*/
+
+    	}
+
+	</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container custom form-control">
+
+
+		<h1 class="text-center">Unit converter!</h1>
+
+		<center><img src="https://media0.giphy.com/media/S6wSH7mljn1J7fZe3k/200w.webp?cid=ecf05e4739zjhyczv1kbtbc7tl0y6ra8r8cemlns4zu3nu8q&ep=v1_gifs_related&rid=200w.webp&ct=s"></center>
+
+		<p align="center">note; please click all the buttons!</p>
+
+		<br>
+		<hr>
+		<br>
+
+		<h3 align="center">Select Measurement:</h3>
+
+		<div>
+
+			<div>
+				<button class="btn btn-block btn-light" disabled>- ✩ -</button>
+			</div>
+
+			<div>
+				<button class="btn btn-block btn-light" onclick="window.location.href = 'FV_ICT9Garnet_Project_Rivera.html';">Length</button>
+			</div>
+
+			<div>
+				<button class="btn btn-block btn-light" onclick="window.location.href = 'Volume.html';">Volume</button>
+			</div>
+
+			<div>
+				<button class="btn btn-block btn-light" onclick="window.location.href = 'Mass.html';">Mass</button>
+			</div>
+
+			<div>
+				<button class="btn btn-block btn-light" disabled>- ✩ -</button>
+			</div>
+
+		</div>
+
+<br>
+<hr>
+<br>
+
+		<div class="row" align="center">
+			<div class="col-md-5">
+				Type Desired Value!
+				<input type="number" class="form-control" placeholder="Millimeter" name="millimeter">
+			</div>
+
+			<div class="col-md-2">
+				<h1>=</h1>
+			</div>
+
+			<div class="col-md-5">
+				The Converted Value:
+				<input type="number" class="form-control" name="output" disabled>
+			</div>
+		</div>
+
+<br>
+<br>
+
+		<div class="row" align="center" row3>
+			<div class="col-md-4">
+				<button class="btn btn-light" onclick="centimeter()">Convert 2 Centimeters</button>
+			</div>
+
+			<div class="col-md-4">
+				<button class="btn btn-light" onclick="meter()">Convert 2 Meters</button>
+			</div>
+
+			<div class="col-md-4">
+				<button class="btn btn-light" onclick="kilometer()">Convert 2 Kilometers</button>
+			</div>
+		</div>
+
+<br>
+<hr>
+<br>
+
+<div align="center">
+<h3>!!please click me!!</h3>
+<button class="btn btn-lg btn-light" onclick="window.location.href = 'Rosali.html';">!!!!</button>
+</div>
+
+	</div>
+
+
+	<script type="text/javascript">
+
+function centimeter() {
+    
+    var base = document.getElementsByName('millimeter')[0].value;
+
+    var result = parseFloat(base) / 10 ;
+    
+    document.getElementsByName('output')[0].value= result;
+
+}
+
+function meter() {
+    
+    var base = document.getElementsByName('millimeter')[0].value;
+
+    var result = parseFloat(base) / 1000 ;
+    
+    document.getElementsByName('output')[0].value= result;
+
+}
+
+function kilometer() {
+    
+    var base = document.getElementsByName('millimeter')[0].value;
+
+    var result = parseFloat(base) / 1000000 ;
+    
+    document.getElementsByName('output')[0].value= result;
+
+}
+
+	</script>
+</body>
+</html>
